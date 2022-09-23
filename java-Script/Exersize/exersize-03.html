@@ -87,7 +87,7 @@
     /*============================================================*/
 
     /*=================Or==============*/
-      document.querySelector("#btnOne").addEventListener("click", function () {
+ /*     document.querySelector("#btnOne").addEventListener("click", function () {
       document.querySelector("#imgOne").style.visibility='hidden';
       document.querySelector("#imgTwo").style.visibility='visible';
       document.querySelector("#imgThree").style.visibility='visible';
@@ -107,7 +107,38 @@
       document.querySelector("#imgTwo").style.visibility='visible';
       document.querySelector("#imgOne").style.visibility='visible';
 
-  });
+  });*/
+
+
+    /*============================================================*/
+
+    /*=================Or==============*/
+     document.querySelector("#btnOne").addEventListener("click",function setImageVisible(id, visible) {
+        var img1 = document.getElementById('imgOne');
+        var img2 = document.getElementById('imgTwo');
+        var img3 = document.getElementById('imgThree');
+        img2.style.visibility = 'visible';
+        img3.style.visibility = 'visible';
+        img1.style.visibility = (visible ? 'visible' : 'hidden');
+    });
+
+    document.querySelector("#btnTwo").addEventListener("click",function setImageVisible(id, visible) {
+        var img1 = document.getElementById('imgOne');
+        var img2 = document.getElementById('imgTwo');
+        var img3 = document.getElementById('imgThree');
+        img1.style.visibility = 'visible';
+        img3.style.visibility = 'visible';
+        img2.style.visibility = (visible ? 'visible' : 'hidden');
+    });
+
+    document.querySelector("#btnThree").addEventListener("click",function setImageVisible(id, visible) {
+        var img1 = document.getElementById('imgOne');
+        var img2 = document.getElementById('imgTwo');
+        var img3 = document.getElementById('imgThree');
+        img2.style.visibility = 'visible';
+        img1.style.visibility = 'visible';
+        img3.style.visibility = (visible ? 'visible' : 'hidden');
+    });
 
 
 </script>
