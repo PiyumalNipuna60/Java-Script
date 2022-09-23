@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basics exersice-01</title>
+
+    <style>
+        img {
+            border: 1px solid black;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Hello Java Script</h1>
+<h1 id="h1ID" name="a">Hello Java Script</h1>
+<h1 class="headingClasses">Hello Java Script</h1>
+<h2 class="headingClasses">What is a DOM.?</h2>
+<h3 class="headingClasses">Institute of Software Engineering</h3>
+
+<img alt="Image" id="mainImage" src="">
+
+<input name="b" placeholder="Input Something" type="text">
+
+<ul>
+    <li>GDSE</li>
+    <li>CMJD</li>
+    <li>IJSE</li>
+    <li>RWAD</li>
+</ul>
+
+<button>Test</button>
+
+<script>
+
+    document.querySelector("button").addEventListener("click",function () {
+      document.querySelector("img").setAttribute("src",document.querySelector("input").value);
+    });
+
+</script>
+
+</body>
+</html>
