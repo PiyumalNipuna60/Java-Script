@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>DOM Manipulation</title>
+
+    <style>
+        img {
+            border: 1px solid black;
+            width: 100px;
+        }
+    </style>
 </head>
 <body>
 
@@ -43,6 +50,10 @@
 
     /*changing styles*/
     document.getElementsByClassName("headingClasses")[0].style.color = "green";
+
+    /*how to get src(attr) values*/
+    document.querySelector("img").getAttribute(param1)
+    document.querySelector("img").setAttribute(param1,param2)
 
 </script>
 
