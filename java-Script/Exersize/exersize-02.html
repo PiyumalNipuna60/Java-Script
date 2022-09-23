@@ -22,6 +22,7 @@
 <img alt="Image" id="mainImage" src="">
 
 <input name="b" placeholder="Input Something" type="text">
+<input id="type" placeholder="text typing" type="text">
 
 <ul>
     <li>GDSE</li>
@@ -39,8 +40,8 @@
     //02. then select the input field and then get the typed text
     //03. select the image and then set the typed value for the src attribute
 
-    document.querySelector("button").addEventListener("click",function () {
-      document.querySelector("img").setAttribute("src",document.querySelector("input").value);
+    document.querySelector("#type").addEventListener("keyup",function () {
+      document.querySelector("#h1ID").innerText=(document.querySelector("#type").value);
     });
 
 </script>
