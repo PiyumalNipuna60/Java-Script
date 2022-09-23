@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/exersize/exersize.iml" filepath="$PROJECT_DIR$/exersize/exersize.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Basics/Basics.iml" filepath="$PROJECT_DIR$/Basics/Basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exersize/exersize.iml" filepath="$PROJECT_DIR$/Exersize/exersize.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-Script.iml" filepath="$PROJECT_DIR$/java-Script.iml" />
     </modules>
   </component>
