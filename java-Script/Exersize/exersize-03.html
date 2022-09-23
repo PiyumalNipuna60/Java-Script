@@ -44,6 +44,9 @@
 
 <script>
 
+
+    /*============================================================*/
+
     /*Image hiding case*/
     /* when button One is clicked Image One Should hide and rest of images should be displayed*/
     /* when button Two is clicked Image Two Should hide and rest of images should be displayed*/
@@ -58,18 +61,28 @@
 
     document.querySelector("#btnOne").addEventListener("click", function () {
         document.querySelector("#imgOne").style.display='none';
+        document.querySelector("#imgTwo").style.display='inline-block';
+        document.querySelector("#imgThree").style.display='inline-block';
 
     });
 
     document.querySelector("#btnTwo").addEventListener("click", function () {
         document.querySelector("#imgTwo").style.display='none';
+        document.querySelector("#imgOne").style.display='inline-block';
+        document.querySelector("#imgThree").style.display='inline-block';
+
 
     });
 
     document.querySelector("#btnThree").addEventListener("click", function () {
         document.querySelector("#imgThree").style.display='none';
+        document.querySelector("#imgTwo").style.display='inline-block';
+        document.querySelector("#imgOne").style.display='inline-block';
 
     });
+
+
+
 
 </script>
 
