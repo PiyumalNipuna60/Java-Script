@@ -59,7 +59,9 @@
 
     //02. Bind click events for those buttons
 
-    document.querySelector("#btnOne").addEventListener("click", function () {
+    /*============================================================*/
+
+  /*  document.querySelector("#btnOne").addEventListener("click", function () {
         document.querySelector("#imgOne").style.display='none';
         document.querySelector("#imgTwo").style.display='inline-block';
         document.querySelector("#imgThree").style.display='inline-block';
@@ -79,9 +81,33 @@
         document.querySelector("#imgTwo").style.display='inline-block';
         document.querySelector("#imgOne").style.display='inline-block';
 
-    });
+    });*/
 
 
+    /*============================================================*/
+
+    /*=================Or==============*/
+      document.querySelector("#btnOne").addEventListener("click", function () {
+      document.querySelector("#imgOne").style.visibility='hidden';
+      document.querySelector("#imgTwo").style.visibility='visible';
+      document.querySelector("#imgThree").style.visibility='visible';
+
+  });
+
+  document.querySelector("#btnTwo").addEventListener("click", function () {
+      document.querySelector("#imgTwo").style.visibility='hidden';
+      document.querySelector("#imgOne").style.visibility='visible';
+      document.querySelector("#imgThree").style.visibility='visible';
+
+
+  });
+
+  document.querySelector("#btnThree").addEventListener("click", function () {
+      document.querySelector("#imgThree").style.visibility='hidden';
+      document.querySelector("#imgTwo").style.visibility='visible';
+      document.querySelector("#imgOne").style.visibility='visible';
+
+  });
 
 
 </script>
