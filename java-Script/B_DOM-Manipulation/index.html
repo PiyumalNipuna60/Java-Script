@@ -34,12 +34,11 @@
 
 <script>
     /* By using following methods we can select DOM elements to be changed */
-    /*
       document.getElementById(""); // we can select unique element by Id (One element)
       document.getElementsByClassName(""); // can select elements by using class selector (HTML Collection)
       document.getElementsByName(""); // select elements by element name attribute value (Node Collection)
       document.getElementsByTagName(""); // select elements by element name (HTML Collection)
-      document.querySelector("");*/ // select only one element from the machings, can use CSS selectors
+      document.querySelector(""); // select only one element from the machings, can use CSS selectors
 
 
     /*remove elements*/
@@ -52,17 +51,17 @@
     document.getElementsByClassName("headingClasses")[0].style.color = "green";
 
     /*how to get src(attr) values*/
-    // document.querySelector("img").getAttribute(param1)
-    // document.querySelector("img").setAttribute(param1,param2)
+    document.querySelector("img").getAttribute(param1)
+    document.querySelector("img").setAttribute(param1,param2)
 
     /*how to get a value from a text field*/
-    // document.querySelector("input").value="C001"; // setting values
-    // document.querySelector("input").value; //getting values
+    document.querySelector("input").value="C001"; // setting values
+    document.querySelector("input").value; //getting values
 
     /*How to write an event for a button*/
-     // document.querySelector("input").addEventListener('click',function(){
-     //     alert("How are you.?");
-     // });
+     document.querySelector("input").addEventListener('click',function(){
+         alert("How are you.?");
+     });
 
 
 
