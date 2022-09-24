@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/B_DOM-Manipulation/B_DOM-Manipulation.iml" filepath="$PROJECT_DIR$/B_DOM-Manipulation/B_DOM-Manipulation.iml" />
       <module fileurl="file://$PROJECT_DIR$/A_Basics/Basics.iml" filepath="$PROJECT_DIR$/A_Basics/Basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/D-DOM-Manipulation-jQuery/D-DOM-Manipulation-jQuery.iml" filepath="$PROJECT_DIR$/D-DOM-Manipulation-jQuery/D-DOM-Manipulation-jQuery.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exersize/exersize.iml" filepath="$PROJECT_DIR$/Exersize/exersize.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-Script.iml" filepath="$PROJECT_DIR$/java-Script.iml" />
     </modules>
