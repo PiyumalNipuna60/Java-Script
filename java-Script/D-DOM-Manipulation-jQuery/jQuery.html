@@ -5,10 +5,10 @@
     <title>jQuery</title>
 </head>
 <body>
-<h1 >jQuery..!</h1>
+<h1 id="firstH1">jQuery..!</h1>
 <h1>jQuery..Hello</h1>
 <h2>What is jQuery and How it works.?</h2>
-<p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquam architecto assumenda blanditiis
+<p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquam architecto assumenda blanditiis
     consequuntur deleniti dolorum, eius error fuga illo ipsam mollitia, perferendis provident ratione sunt tempora
     tempore ut.</p>
 <input placeholder="Input Something" type="text">
@@ -16,9 +16,9 @@
 <button >Test</button>
 <ul>
     <li>IJSE</li>
-    <li >GDSE</li>
-    <li >CMJD</li>
-    <li >RMAD</li>
+    <li class="list">GDSE</li>
+    <li id="l3">CMJD</li>
+    <li class="list">RMAD</li>
 </ul>
 
 <script src="assets/js/jquery-3.6.1.min.js"></script> <!--import jQuery library-->
@@ -43,6 +43,21 @@
 
 
     /*=======================================================*/
+
+    //What we can put inside jQuery selector
+
+     $('h1').css('color', 'red'); // select all h1 in the dom and apply the color red (type selector)
+
+    $("#para").css("font-size",'30px'); //(id selector is also working)
+
+    $(".list").css('color','red'); // class selector
+
+    $('[id]').css('color','yellow'); // Attribute selector
+
+    $("li:first-child").css('border','2px solid red'); // Pseudo class also work
+
+
+
 </script>
 </body>
 </html>
