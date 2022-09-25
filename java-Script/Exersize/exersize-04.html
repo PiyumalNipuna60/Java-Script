@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+</head>
+<body>
+<h1 id="firstH">jQuery..!</h1>
+<h1>jQuery..Hello</h1>
+<h2>What is jQuery and How it works.?</h2>
+<p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquam architecto assumenda blanditiis
+    consequuntur deleniti dolorum, eius error fuga illo ipsam mollitia, perferendis provident ratione sunt tempora
+    tempore ut.</p>
+<input id="input1" placeholder="Input Something" type="text">
+
+<button id="upBtn">Up</button>
+
+<input id="input2" placeholder="Input Something" type="text">
+
+<button id="downBtn">Down</button>
+
+<ul>
+    <li>IJSE</li>
+    <li class="list">GDSE</li>
+    <li id="l3">CMJD</li>
+    <li class="list">RMAD</li>
+</ul>
+<h2>Hello there</h2>
+<img alt="IJSE" src="" width="500px">
+
+<script src="assets/js/jquery-3.6.1.min.js"></script> <!--import jQuery library-->
+<script>
+
+    // first select the button and add a click event
+    $("#upBtn").click(function(){
+        $('ul').prepend('<li>'+$("#input1").val()+'</li>');
+    });
+
+    $("#downBtn").click(function(){
+        $('ul').append('<li>'+$("#input2").val()+'</li>');
+    });
+
+
+</script>
+</body>
+</html>
