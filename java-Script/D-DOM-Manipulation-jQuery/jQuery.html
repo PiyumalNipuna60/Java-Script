@@ -11,9 +11,14 @@
 <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquam architecto assumenda blanditiis
     consequuntur deleniti dolorum, eius error fuga illo ipsam mollitia, perferendis provident ratione sunt tempora
     tempore ut.</p>
-<input placeholder="Input Something" type="text">
+<input id="input1" placeholder="Input Something" type="text">
 
-<button >Test</button>
+<button id="upBtn">Up</button>
+
+<input id="input2" placeholder="Input Something" type="text">
+
+<button id="downBtn">Down</button>
+
 <ul>
     <li>IJSE</li>
     <li class="list">GDSE</li>
@@ -21,7 +26,7 @@
     <li class="list">RMAD</li>
 </ul>
 <h2>Hello there</h2>
-<img src="" alt="IJSE" width="500px">
+<img alt="IJSE" src="" width="500px">
 
 <script src="assets/js/jquery-3.6.1.min.js"></script> <!--import jQuery library-->
 <script>
@@ -59,10 +64,10 @@
     // $("li:first-child").css('border','2px solid red'); // Pseudo class also work
 
     //What about CSS combinators.? are they work with jQuery.?
-   /* $("body h1").css('color', 'red'); // descendent combinator
-    $("ul>li").css('font-size', '50px');// child combinator
-    $("h2+p").css('color', 'green'); // adjacent combinator
-    $("h1~h2").css('border', '2px solid red'); // general siblings*/
+    /* $("body h1").css('color', 'red'); // descendent combinator
+     $("ul>li").css('font-size', '50px');// child combinator
+     $("h2+p").css('color', 'green'); // adjacent combinator
+     $("h1~h2").css('border', '2px solid red'); // general siblings*/
 
     // what about grouping selector.?
     // $('h1,h2').css('color','red'); // working
@@ -92,9 +97,26 @@
 
     // $('img').attr('src'); // get attribute value
 
-    //how to write down an event using jQuery
-    $('button').click(function(){
-        alert("hello");
+    // How to add elements to dom
+    //append
+    //prepend
+
+    // add to the bottom of selected element
+    $("ul").append("<li>A</li>");
+    $("ul").append("<li>B</li>");
+
+    //add to the top of the selected element
+    $("ul").prepend("<li>C</li>");
+    $("ul").prepend("<li>D</li>");
+
+
+    // first select the button and add a click event
+    $("#btnOne").click(function(){
+        $('ul').prepend('<li>'+$("#txtInput").val()+'</li>');
+    });
+
+    $("#btnTwo").click(function(){
+        $('ul').append('<li>'+$("#txtInput").val()+'</li>');
     });
 
 
