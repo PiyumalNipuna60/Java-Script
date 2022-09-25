@@ -57,11 +57,17 @@
     // $("li:first-child").css('border','2px solid red'); // Pseudo class also work
 
     //What about CSS combinators.? are they work with jQuery.?
-    $("body h1").css('color', 'red'); // descendent combinator
+   /* $("body h1").css('color', 'red'); // descendent combinator
     $("ul>li").css('font-size', '50px');// child combinator
     $("h2+p").css('color', 'green'); // adjacent combinator
-    $("h1~h2").css('border', '2px solid red'); // general siblings
+    $("h1~h2").css('border', '2px solid red'); // general siblings*/
 
+    // what about grouping selector.?
+    // $('h1,h2').css('color','red'); // working
+
+
+    //how to remove an element from dom using jQuery
+    $('h1').remove(); // this is how to do it using jQuery
 
 </script>
 </body>
