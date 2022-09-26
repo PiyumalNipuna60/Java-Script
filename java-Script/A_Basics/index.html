@@ -51,7 +51,7 @@
 
 
     /*===============================================*/
-
+/*
     // So why JS in Dynamic Typing
     var mySalary= 100000.99;
     typeof  mySalary;//number // after assign value for the first time, I will get the type of that value
@@ -64,7 +64,32 @@
     mySalary="No Salary";
     typeof  mySalary;//String (now it has changed to string) // always dynamically changing its data type
 
-    // This is why js is known as dynamic scripting language
+    // This is why js is known as dynamic scripting language*/
+
+
+    /*===============================================*/
+
+    /* So, what the troubles we have to face by creating variables using var declaration type */
+    var mySate=false;
+    var mySate=true; // can duplicate the identifiers
+
+    // Does not satisfy the scope
+     var myTp=1199;
+    {
+         console.log(myTp);// this is legal
+         var myAge=100;
+    }
+     console.log(myAge);// this should be not accessible, but It is accessible
+
+
+    // So what are the special features in var.?
+    // Hoisting - you can use a variable which is going to be later initialized
+    console.log(x);//undefined
+    var x = 100;
+    console.log(x);//100
+
+
+    let myName='Kasun';
 
 </script>
 
