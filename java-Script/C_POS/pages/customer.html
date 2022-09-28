@@ -85,6 +85,8 @@
 <script src="../assets/js/jquery-3.6.1.min.js"></script>
 <script>
     //select the save button and bind a click event for it
+
+    var customer;
     $("#btnCustomer").click(function () {
         // alert("helow therae");
 
@@ -95,7 +97,7 @@
         let customerSalary = $("#txtCustomerSalry").val();
 
 
-        var customer = {
+        customer = {
             id: customerID,
             name: customerName,
             address: customerAddress,
