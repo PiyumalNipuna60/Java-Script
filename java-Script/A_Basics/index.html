@@ -291,11 +291,41 @@
     console.log(typeof noValue); // because no value is defined*/
 
 
-    // Null (to represent that there are no values)
+/*    // Null (to represent that there are no values)
     //So what is null.?
     var nullVariable=null;// this a is initialized, but no values, when we want to initialize a variable with no value we can use null
     console.log(nullVariable);
-    console.log(typeof nullVariable); //object (null refers the object type in js)
+    console.log(typeof nullVariable); //object (null refers the object type in js)*/
+
+
+    /*===================Object=====================*/
+
+    //How to create a named value container(Object) in JS
+    // There are two ways to create an Object in JS
+    // -Literal Base Object
+    // -Function Base
+
+    // Literal Base (ROW version of creating an object)
+    //properties // methods
+
+    var customer = {
+        "id": "C001",  //key : value
+        "name": "Dasun",
+        "address": "Galle",
+        "salary": 19999,
+        "myStatus": true
+    }
+    //Object is a named value container
+
+    //how to access values in an object
+
+    // dot notation
+    customer.id; // C001
+    console.log(customer.id);
+
+    //bracket notation
+    customer['address'];
+    console.log(customer['address']);
 
 </script>
 
