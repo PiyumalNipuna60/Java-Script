@@ -402,13 +402,19 @@
     customers.shift();//B
     console.log(customers);*/
 
-    //Unshift (Add values to the first index of the array)
+
+/*    //Unshift (Add values to the first index of the array)
     customers.unshift("B");
     customers.unshift("A");
     customers.unshift("Z");
-    console.log(customers);
+    console.log(customers);*/
 
 
+
+    //Slice (Can copy a selected range of array to a new array)
+    var newArray=customers.slice(0,4); //start and end indexes
+    console.log(newArray);
+    customers.slice(); // customers copy
 
 </script>
 
