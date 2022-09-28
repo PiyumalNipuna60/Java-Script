@@ -94,7 +94,16 @@
         let customerAddress = $("#txtCustomerAddress").val();
         let customerSalary = $("#txtCustomerSalry").val();
 
-        alert(customerID+""+customerName+""+customerAddress+""+customerSalary);
+
+        var customer = {
+            id: customerID,
+            name: customerName,
+            address: customerAddress,
+            salary: customerSalary
+        }
+
+        alert(customer);
+        console.log(customer);
     });
 
 </script>
