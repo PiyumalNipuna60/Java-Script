@@ -107,19 +107,34 @@
             salary: customerSalary
         }
 
-
+        //add the customer object to the array
         customers.push(customerObject);
         console.log(customers);
+        getAllCustomer();
 
     });
 
     $("#btnGetAll").click(function () {
-        for (var cus of customers){
 
+        getAllCustomer();
+
+    });
+
+
+    //load all customers
+    function getAllCustomer() {
+
+        // get all customer records from the array
+        for(var customer of customers){
+            console.log(customer);// customer object
+
+            // add those data to the table row
             var row="<tr><td>"+cus.id+"</td><td>"+cus.name+"</td><td>"+cus.address+"</td><td>"+cus.salary+"</td></tr>";
+
+            //then add it to the table body of customer table
             $("#tblCustomer").append(row);
         }
-    });
+    }
 
 </script>
 </body>
