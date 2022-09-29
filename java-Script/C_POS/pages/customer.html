@@ -114,12 +114,11 @@
     });
 
     $("#btnGetAll").click(function () {
-       /* for (var cus of customers){
-            console.log(cus.id);
-        }*/
+        for (var cus of customers){
 
-    var row="<tr><td>C001</td><td>Dasun</td><td>0754585658</td><td>200000</td></tr>";
-    $("#tblCustomer").append(row);
+            var row="<tr><td>"+cus.id+"</td><td>"+cus.name+"</td><td>"+cus.address+"</td><td>"+cus.salary+"</td></tr>";
+            $("#tblCustomer").append(row);
+        }
     });
 
 </script>
