@@ -57,7 +57,7 @@
                 <button class="btn btn-primary" id="btnCustomer">Save Customer</button>
                 <button class="btn btn-danger" id="btnCusDelete">Remove</button>
                 <button class="btn btn-warning" id="btnUpdate">Update</button>
-                <button class="btn btn-success">Get All</button>
+                <button class="btn btn-success" id="btnGetAll">Get All</button>
                 <button class="btn btn-danger" id="btn-clear1">Clear All</button>
             </div>
 
@@ -86,7 +86,7 @@
 <script>
     //select the save button and bind a click event for it
 
-    var customer;
+    var customers=[];
     $("#btnCustomer").click(function () {
         // alert("helow therae");
 
@@ -97,15 +97,26 @@
         let customerSalary = $("#txtCustomerSalry").val();
 
 
-        customer = {
+        //Put all of these values inside a named container
+        // customer
+
+        var customerObject = {
             id: customerID,
             name: customerName,
             address: customerAddress,
             salary: customerSalary
         }
 
-        alert(customer);
-        console.log(customer);
+
+        customers.push(customerObject);
+        console.log(customers);
+
+    });
+
+    $("#btnGetAll").click(function () {
+        for (var i in customer){
+            console.log(i+" "+customer.id);
+        }
     });
 
 </script>
