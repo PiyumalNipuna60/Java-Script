@@ -86,7 +86,7 @@
 <script>
     //select the save button and bind a click event for it
 
-    var customers=[];
+    var customers = [];
     $("#btnCustomer").click(function () {
         // alert("helow therae");
 
@@ -114,6 +114,7 @@
 
     });
 
+
     $("#btnGetAll").click(function () {
 
         getAllCustomer();
@@ -121,21 +122,22 @@
     });
 
 
-
     /*cdfsadf*/
 
     //load all customers
     function getAllCustomer() {
+        //remove all the table body content before adding data
+        $("#tblCustomer").empty();
 
         // get all customer records from the array
-        for(var customer of customers){
+        for (var customer of customers) {
             console.log(customer);// customer object
 
             // add those data to the table row
             // var row= "<tr><td>"+customer.id+"</td><td>"+customer.name+"</td><td>"+customer.address+"</td><td>"+customer.salary+"</td></tr>";
 
             // Using String Literals to do the same thing as above
-            var row= `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.salary}</td></tr>`;
+            var row = `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.salary}</td></tr>`;
 
             //then add it to the table body of customer table
             $("#tblCustomer").append(row);
