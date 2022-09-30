@@ -111,16 +111,11 @@
         customers.push(customerObject);
         console.log(customers);
         getAllCustomer();
-
     });
 
-    $("#txtCustomerID").val().empty();
-    console.log($("#txtCustomerID").val());
 
     $("#btnGetAll").click(function () {
-
         getAllCustomer();
-
     });
 
 
@@ -145,6 +140,10 @@
             $("#tblCustomer").append(row);
         }
     }
+
+    $("#tblCustomer>tr").click(function () {
+
+    });
 
 </script>
 </body>

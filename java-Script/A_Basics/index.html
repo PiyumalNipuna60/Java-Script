@@ -6,7 +6,9 @@
 </head>
 <body>
 
-
+<div>
+    <button id="d">Alert</button>
+</div>
 <!--First method-->
 <!--here we have js. and you can interpret them-->
 <script>
@@ -16,7 +18,8 @@
 </script>
 
 <!--second method-->
-<script src="assets/js/my-script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.35/dist/sweetalert2.all.min.js"></script>
+<script src=""></script>
 
 <script>
     /*Father of JS - Brendan Eich (1995)*/
@@ -335,7 +338,7 @@
 
     getMyName();*/
 
-    /!*===================method=====================*!/
+/*    /!*===================method=====================*!/
     function getMyData() { // this is how to create a js function
         console.log("My Name IS IJSE")
         console.log("Iam 16 years old")
@@ -350,7 +353,7 @@
 
     function getMyAges() {
         console.log(10, 20, 30, 40, 60)
-    }
+    }*/
 
 
     /!*===================Arrays=====================*!/
@@ -524,6 +527,16 @@
 */
 
 
+    /*===================Alert=====================*/
+
+    $("#d").click(function (){
+        console.log("hellow alert")
+        Swal.fire(
+            'The Internet?',
+            'That thing is still around?',
+            'question'
+        )
+    });
 
 
 </script>
