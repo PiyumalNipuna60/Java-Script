@@ -237,12 +237,15 @@
         let itemName = $("#txtItemName").val();
         let itemQtyOnHand = $("#txtQTYOnHand").val();
         let itemPrice = $("#txtItemPrice").val();
+        let itemQty = $("#txtQty").val();
 
         var itemObject = {
             code: itemCode,
             name: itemName,
-            qty: itemQtyOnHand,
-            price: itemPrice
+            qtyOnHand: itemQtyOnHand,
+            price: itemPrice,
+            qty : itemQty,
+            total : (itemPrice*itemQty)
         }
 
         orders.push(itemObject);
@@ -253,7 +256,12 @@
     function getLoadOrder() {
         $("#orderTable").empty();
 
+        for (var order of orders) {
+            console.log(order);
 
+            var row = `<tr><td>${order.code}</td><td>${order.name}</td><td>${order.price}</td><td>${order.qty}</td><td>${order.total}</td></tr>`;
+            $("#orderTable").append(row);
+        }
     }
 
 </script>
