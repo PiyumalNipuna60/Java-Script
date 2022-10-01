@@ -21,7 +21,8 @@
     <ul class="list-group list-group-horizontal text-danger justify-content-end font-weight-bold">
         <li class="list-group-item bg-white" id="lnkHome"><a href="../index.html">Home</a></li>
         <li class="list-group-item bg-white" id="lnkCustomer"><a href="customer.html">Customer</a></li>
-        <li class="list-group-item bg-danger text-white" id="lnkItem"><a class="text-white" href="item.html">Item</a></li>
+        <li class="list-group-item bg-danger text-white" id="lnkItem"><a class="text-white" href="item.html">Item</a>
+        </li>
         <li class="list-group-item bg-white" id="lnkOrders"><a href="purchase-order.html">Orders</a></li>
     </ul>
 </header>
@@ -83,16 +84,21 @@
 <script src="../assets/js/jquery-3.6.1.min.js"></script>
 <script src="../assets/js/bootstrap.min.js"></script>
 <script>
+    var item = [];
     $("#btnItem").click(function () {
         let itemCode = $("#itemCode").val();
-        let itemName=$("#itemName").val();
-        let itemQty=$("#itemQty").val();
-        let itemPrice=$("#itemPrice").val();
+        let itemName = $("#itemName").val();
+        let itemQty = $("#itemQty").val();
+        let itemPrice = $("#itemPrice").val();
 
-        console.log(itemCode);
-        console.log(itemName);
-        console.log(itemQty);
-        console.log(itemPrice);
+        var itemObject = {
+            code: itemCode,
+            name: itemName,
+            qty: itemQty,
+            price: itemPrice
+        }
+
+        console.log(itemObject);
     });
 </script>
 </body>
