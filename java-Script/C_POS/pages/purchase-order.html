@@ -119,7 +119,7 @@
                                     <div class="col-5">
                                         <div class="form-group">
                                             <label>Item Name :</label>
-                                            <input class="form-control" id="txtItemDescription" type="text">
+                                            <input class="form-control" id="txtItemName" type="text">
                                         </div>
                                     </div>
                                     <div class="col-4">
@@ -226,6 +226,28 @@
         </div>
     </div>
 </main>
+<script src="../assets/js/jquery-3.6.1.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script>
 
+    var orders=[];
+    $(btnAddToTable).click(function () {
+        let itemCode = $("#txtItemCode").val();
+        let itemName = $("#txtItemName").val();
+        let itemQtyOnHand = $("#txtQTYOnHand").val();
+        let itemPrice = $("#txtItemPrice").val();
+
+        var itemObject ={
+            code: itemCode,
+            name: itemName,
+            qty: itemQtyOnHand,
+            price: itemPrice
+        }
+
+        orders.push(itemObject);
+        console.log(orders);
+    });
+
+</script>
 </body>
 </html>
