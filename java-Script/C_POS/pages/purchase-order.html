@@ -22,8 +22,9 @@
     <ul class="list-group list-group-horizontal text-danger justify-content-end font-weight-bold">
         <li class="list-group-item bg-white" id="lnkHome"><a href="../index.html">Home</a></li>
         <li class="list-group-item bg-white" id="lnkCustomer"><a href="customer.html">Customer</a></li>
-        <li class="list-group-item bg-white" id="lnkItem"><a  href="item.html">Item</a></li>
-        <li class="list-group-item bg-danger text-white" id="lnkOrders"><a class="text-white" href="purchase-order.html">Orders</a></li>
+        <li class="list-group-item bg-white" id="lnkItem"><a href="item.html">Item</a></li>
+        <li class="list-group-item bg-danger text-white" id="lnkOrders"><a class="text-white"
+                                                                           href="purchase-order.html">Orders</a></li>
     </ul>
 </header>
 
@@ -230,14 +231,14 @@
 <script src="../assets/js/bootstrap.min.js"></script>
 <script>
 
-    var orders=[];
+    var orders = [];
     $(btnAddToTable).click(function () {
         let itemCode = $("#txtItemCode").val();
         let itemName = $("#txtItemName").val();
         let itemQtyOnHand = $("#txtQTYOnHand").val();
         let itemPrice = $("#txtItemPrice").val();
 
-        var itemObject ={
+        var itemObject = {
             code: itemCode,
             name: itemName,
             qty: itemQtyOnHand,
@@ -246,7 +247,14 @@
 
         orders.push(itemObject);
         console.log(orders);
+        getLoadOrder();
     });
+
+    function getLoadOrder() {
+        $("#orderTable").empty();
+
+
+    }
 
 </script>
 </body>
