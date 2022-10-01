@@ -100,11 +100,16 @@
 
         item.push(itemObject);
         console.log(item);
+        tableLoad();
     });
 
     $("#btnGetAll").click(function () {
-
+        tableLoad();
     });
+
+    function tableLoad() {
+        $("#btnItem").empty();
+    }
 
 </script>
 </body>
