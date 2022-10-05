@@ -150,6 +150,13 @@
     //     console.log(this); // we can use this // return tr dom object
     // });
 
+    //to access jQuery method we have to convert the dom object to the jQuery Object
+    $("#tblCustomer>tr").click(function () {
+        //how to get the row we click at the moment
+        console.log($(this)); // now the clicked dom object will convert into jQuery object and then will
+        // Allow you to access jQuery methods
+    });
+
 </script>
 </body>
 </html>
