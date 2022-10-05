@@ -120,9 +120,9 @@
 
     $('body').children(':eq(1)').children(':nth-child(2)').text();*/
 
-    /*=================================================*/
-    //parent()/parents()
-    /*-------*/
+ /*=================================================*/
+   /*    //parent()/parents()
+    /!*-------*!/
     // Parents (can get the entire parent hierarchy of a selected element)
     $("#d").parents(); //return whole parent hierarchy of #d element
 
@@ -140,9 +140,11 @@
     $('#d').parents('section').eq(0).children(":eq(0)").children('h1').css('color','red');
 
     // Change color of CMJD list by using traversing
-    $('#d').parents('div').children(':eq(0)').children().children().children('ul').children(':eq(1)').css('color','red');
+    $('#d').parents('div').children(':eq(0)').children().children().children('ul').children(':eq(1)').css('color','red');*/
 
-
+ /*=================================================*/
+   /* //find...*/
+    $('body').find('ul').remove(); // remove all the ul inside the body
 
 
 </script>
