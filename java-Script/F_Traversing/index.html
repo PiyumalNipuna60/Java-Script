@@ -65,8 +65,8 @@
 
 
  /*=================================================*/
-    //children
-    /*-------*/
+   /* //children
+    /!*-------*!/
     // $('body').children();
     //return all the root children of selected element
 
@@ -118,7 +118,17 @@
     $('body').children(':eq(1)').children(':nth-child(2)');
     // S.fn.init [li, prevObject: S.fn.init(1)]
 
-    $('body').children(':eq(1)').children(':nth-child(2)').text();
+    $('body').children(':eq(1)').children(':nth-child(2)').text();*/
+
+    /*=================================================*/
+    //parent()/parents()
+    /*-------*/
+    // Parents (can get the entire parent hierarchy of a selected element)
+    $("#d").parents(); //return whole parent hierarchy of #d element
+
+    // Parent (can get the nearest parent of a selected element)
+    $("#d").parent(); // return the nearest parent of #d element
+
 
 
 
