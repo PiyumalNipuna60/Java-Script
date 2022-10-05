@@ -63,7 +63,10 @@
     * children(":eq(1)")
     * */
 
+
+ /*=================================================*/
     //children
+    /*-------*/
     // $('body').children();
     //return all the root children of selected element
 
@@ -98,6 +101,28 @@
 
     // 03.
     $('body').children().eq('0').text();
+
+
+
+    //Recursively calling traversing methods
+
+    $('body').children();
+    // S.fn.init(6) [h1, ul, section, script, script, script, prevObject: S.fn.init(1)]
+
+    $('body').children(':eq(1)');
+    // S.fn.init [ul, prevObject: S.fn.init(1)]
+
+    $('body').children(':eq(1)').children();
+    // S.fn.init(3) [li, li, li, prevObject: S.fn.init(1)]
+
+    $('body').children(':eq(1)').children(':nth-child(2)');
+    // S.fn.init [li, prevObject: S.fn.init(1)]
+
+    $('body').children(':eq(1)').children(':nth-child(2)').text();
+
+
+
+
 
 </script>
 </body>
