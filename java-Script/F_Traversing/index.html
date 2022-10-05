@@ -129,7 +129,11 @@
     // Parent (can get the nearest parent of a selected element)
     $("#d").parent(); // return the nearest parent of #d element
 
-
+    // So can we select one element from this
+    $('#d').parents('div');
+    $('#d').parents(':eq(0)');
+    $('#d').parents(':eq(1)');
+    $('#d').parents().eq(0);
 
 
 
