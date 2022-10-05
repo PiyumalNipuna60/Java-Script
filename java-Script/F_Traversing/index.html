@@ -136,6 +136,13 @@
     $('#d').parents().eq(0);
 
 
+    //Using all of them for selecting an elements
+    $('#d').parents('section').eq(0).children(":eq(0)").children('h1').css('color','red');
+
+    // Change color of CMJD list by using traversing
+    $('#d').parents('div').children(':eq(0)').children().children().children('ul').children(':eq(1)').css('color','red');
+
+
 
 
 </script>
