@@ -85,6 +85,20 @@
     $('body').children().get(0); // by calling get method we can get a DOM
     //element (returns DOM element not a jQuery object)
 
+    // so if we try to do something like below. it will be an error
+    $('body').children().get(1).text(); //error
+    // we cannot access jQuery methods from a DOM object
+
+    //So how to resolve the above problem
+    // 01.
+    $('body').children(':nth-child(1)').text();
+
+    // 02.
+    $('body').children(':eq(0)').text();
+
+    // 03.
+    $('body').children().eq('0').text();
+
 </script>
 </body>
 </html>
