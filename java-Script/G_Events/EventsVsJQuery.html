@@ -14,7 +14,15 @@
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 <script>
 
+    // jQuery formalized way of binding events to elements
+    $("#btnTest").click(function () {
+        console.log("Btn Clicked")
+    });
 
+    // This is how that jQuery gave us to write down an event
+    $("#btnTest").on('click', function () {
+        console.log("Helloooooooo");
+    });
 
 </script>
 
