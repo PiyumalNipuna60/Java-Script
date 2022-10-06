@@ -13,11 +13,15 @@
     <li id="se">Specified Events</li>
 </ul>
 
-<button >Test</button>
-<button >Test</button>
+<button onclick="alert('hello, I am a global event')">Test</button>
+<button onclick="testGlobalEvents()">Test</button>
 
 
 <script>
+    //Global events
+    function testGlobalEvents() {
+        console.log("Hello there..!")
+    }
 
 
 
