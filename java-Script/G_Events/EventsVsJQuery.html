@@ -14,18 +14,21 @@
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 <script>
 
-    // jQuery formalized way of binding events to elements
-    $("#btnTest").click(function () {
-        console.log("Btn Clicked")
-    });
+    /*    // jQuery formalized way of binding events to elements
+        $("#btnTest").click(function () {
+            console.log("Btn Clicked")
+        });
 
-    // This is how that jQuery gave us to write down an event
-    $("#btnTest").on('click', function () {
-        console.log("Helloooooooo");
-    });
+        // This is how that jQuery gave us to write down an event
+        $("#btnTest").on('click', function () {
+            console.log("Helloooooooo");
+        });
 
-    // so we can also detach events after binding
-    $("#btnTest").off('click');
+        // so we can also detach events after binding
+        $("#btnTest").off('click');*/
+
+
+   /* =================================================================*/
 
     //So what are the formalized events that we have in jQuery
     //click();
@@ -39,6 +42,13 @@
     //mouseup();
     //mousemove();
 
+    $("#btnTest").on('click', function () {
+        console.log('btn clicked');
+    });
+
+    $("#btnTest").on('dblclick', function () {
+        alert('btn double clicked');
+    });
 </script>
 
 </body>
