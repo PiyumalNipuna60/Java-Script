@@ -177,7 +177,13 @@
             let address = $(this).children(":eq(2)").text();
             let salary = $(this).children(":eq(3)").text();
 
-            console.log(id, name, address, salary);
+            // console.log(id, name, address, salary);
+
+            //setting table details values to text fields
+            $("#txtCustomerID").val(id);
+            $("#txtCustomerName").val(name);
+            $("#txtCustomerAddress").val(address);
+            $("#txtCustomerSalry").val(salary);
 
         });
     }
