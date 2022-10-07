@@ -104,6 +104,16 @@
 <script src="assets/js/bootstrap.min.js"></script>
 <script>
 
+     //Bind click event
+       $('#btnCustomer').on('click', function () {
+           alert("Hello there.");
+       });
+
+       //Bind double click event
+       $("#tblCustomer>tr").on('dblclick', function () {
+           $(this).remove(); //select the row which runs the event at the moment and then delete it
+       });
+
 
 </script>
 </body>
