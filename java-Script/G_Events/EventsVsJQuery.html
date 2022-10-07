@@ -28,7 +28,7 @@
         $("#btnTest").off('click');*/
 
 
-   /* =================================================================*/
+    /* =================================================================*/
 
     //So what are the formalized events that we have in jQuery
     //click();
@@ -42,12 +42,31 @@
     //mouseup();
     //mousemove();
 
-    $("#btnTest").on('click', function () {
-        console.log('btn clicked');
+
+    //click();--------------------
+    // $("#btnTest").on('click', function () {
+    //     console.log('btn clicked');
+    // });
+
+
+    //dblclick();-----------------
+
+    // $("#btnTest").on('dblclick', function () {
+    //     alert('btn double clicked');
+    // });
+
+    //focus();--------------------
+
+    $("h1").focus(function () {
+        console.log("h1 focus");
     });
 
-    $("#btnTest").on('dblclick', function () {
-        alert('btn double clicked');
+    $("#btnTest").focus(function () {
+        console.log("button focus");
+    });
+
+    $("input").focus(function () {
+        console.log("input focus");
     });
 </script>
 
