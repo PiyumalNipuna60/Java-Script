@@ -108,18 +108,31 @@
     $('#btnCustomer').on('click', function () {
         alert("Hello there.");
     });
+  //.....................
 
     //Bind double click event
     $("#tblCustomer>tr").on('dblclick', function () {
         $(this).remove(); //select the row which runs the event at the moment and then delete it
     });
+    //....................
 
+    //Bind focus event
     $("#txtCustomerID").on('focus', function () {
         console.log("Customer ID Field Focused")
     });
 
     $("#txtCustomerName").on('focus', function () {
         console.log("Customer Name Field Focused")
+    });
+    //....................
+
+    //Bind blur event
+    $("#txtCustomerID").on('blur',function () {
+        console.log("Customer ID Field Blurred")
+    });
+
+    $("#txtCustomerName").on('blur',function () {
+        console.log("Customer Name Field Blurred")
     });
 
 
