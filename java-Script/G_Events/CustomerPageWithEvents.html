@@ -139,12 +139,42 @@
         });
     */
 
+    /*    $("#txtCustomerID").on("keydown", function (event) {
+            console.log(event.key); // we can use event object properties to verify which keys we are pressing
+            $("#display").text(event.key);
+
+        });*/
+
+
     $("#txtCustomerID").on("keydown", function (event) {
-        console.log(event.key); // we can use event object properties to verify which keys we are pressing
-        $("#display").text(event.key);
+        if (event.key == "Tab") {
+
+        }
+        if (event.key == "Enter") {
+            $("#txtCustomerName").focus();
+        }
 
     });
 
+    $("#txtCustomerName").on("keydown", function (event) {
+        if (event.key == "Enter") {
+            $("#txtCustomerAddress").focus();
+        }
+
+    });
+
+    $("#txtCustomerAddress").on("keydown", function (event) {
+        if (event.key == "Enter") {
+            $("#txtCustomerSalary").focus();
+        }
+
+    });
+
+    $("#txtCustomerSalary").on("keydown", function (event) {
+        if (event.key == "Enter") {
+            $("#btnCustomer").focus();
+        }
+    });
 
 </script>
 </body>
