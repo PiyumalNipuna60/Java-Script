@@ -187,7 +187,7 @@
 
     /* =====================mouse events===========================*/
 
-    //What we can do with mouse events
+    // What we can do with mouse events
     $("#heading").on("mouseup", function () {
         console.log("Mouse Up")
     });
@@ -199,6 +199,20 @@
     $("#heading").on("mousemove", function () {
         console.log("Mouse Move")
     });
+
+
+    $(window).on("mousemove", function (event) {
+        console.log(event.pageX, event.pageY)
+
+        $("#heading").css('top',event.pageY)
+        $("#heading").css('left',event.pageX)
+        $("#heading").css('position','absolute')
+
+
+
+        $("#heading").text(`X : ${event.pageX} and Y : ${event.pageY}`)
+    });
+
 
 </script>
 </body>
