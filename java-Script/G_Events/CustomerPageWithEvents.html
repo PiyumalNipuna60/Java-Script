@@ -139,6 +139,9 @@
         });
     */
 
+
+    /* =====================mouse events===========================*/
+
     /*    $("#txtCustomerID").on("keydown", function (event) {
             console.log(event.key); // we can use event object properties to verify which keys we are pressing
             $("#display").text(event.key);
@@ -179,6 +182,22 @@
         if (event.key == "Enter") {
             $("#btnCustomer").focus();
         }
+    });
+
+
+    /* =====================mouse events===========================*/
+
+    //What we can do with mouse events
+    $("#heading").on("mouseup", function () {
+        console.log("Mouse Up")
+    });
+
+    $("#heading").on("mousedown", function () {
+        console.log("Mouse Down")
+    });
+
+    $("#heading").on("mousemove", function () {
+        console.log("Mouse Move")
     });
 
 </script>
