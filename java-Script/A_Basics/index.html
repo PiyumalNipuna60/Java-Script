@@ -47,10 +47,10 @@
     boolean state= false;*!/*/
 
     /* In JavaScript */
-    /*How to make a variable in JS*/
-    var name = "Hello JS";
-    typeof name; //string
-    alert(name);
+    /*    /!*How to make a variable in JS*!/
+        var name = "Hello JS";
+        typeof name; //string
+        alert(name);*/
 
     /* Why JS is known as Loosely typed language*/
     var age = 10; // in here no data type defined before creating the variable
@@ -294,11 +294,11 @@
     console.log(typeof noValue); // because no value is defined*/
 
 
-/*    // Null (to represent that there are no values)
-    //So what is null.?
-    var nullVariable=null;// this a is initialized, but no values, when we want to initialize a variable with no value we can use null
-    console.log(nullVariable);
-    console.log(typeof nullVariable); //object (null refers the object type in js)*/
+    /*    // Null (to represent that there are no values)
+        //So what is null.?
+        var nullVariable=null;// this a is initialized, but no values, when we want to initialize a variable with no value we can use null
+        console.log(nullVariable);
+        console.log(typeof nullVariable); //object (null refers the object type in js)*/
 
 
     /*===================Object=====================*/
@@ -311,49 +311,49 @@
     // Literal Base (ROW version of creating an object)
     //properties // methods
 
-/*    var customer = {
-        "id": "C001",  //key : value
-        "name": "Dasun",
-        "address": "Galle",
-        "salary": 19999,
-        "myStatus": true
-    }
-    //Object is a named value container
+    /*    var customer = {
+            "id": "C001",  //key : value
+            "name": "Dasun",
+            "address": "Galle",
+            "salary": 19999,
+            "myStatus": true
+        }
+        //Object is a named value container
 
-    //how to access values in an object
+        //how to access values in an object
 
-    // dot notation
-    customer.id; // C001
-    console.log(customer.id);
+        // dot notation
+        customer.id; // C001
+        console.log(customer.id);
 
-    //bracket notation
-    customer['address'];
-    console.log(customer['address']);*/
-
-
-/*    /!*===================function=====================*!/
-    function getMyName(){
-        alert("My Name IS ABCDE");
-    }
-
-    getMyName();*/
-
-/*    /!*===================method=====================*!/
-    function getMyData() { // this is how to create a js function
-        console.log("My Name IS IJSE")
-        console.log("Iam 16 years old")
-    }
-
-    getMyData(); // you can call a function like this
-    getMyData();
+        //bracket notation
+        customer['address'];
+        console.log(customer['address']);*/
 
 
-    // Function Hoisting
-    getMyAges(); // you can and declare it later
+    /*    /!*===================function=====================*!/
+        function getMyName(){
+            alert("My Name IS ABCDE");
+        }
 
-    function getMyAges() {
-        console.log(10, 20, 30, 40, 60)
-    }*/
+        getMyName();*/
+
+    /*    /!*===================method=====================*!/
+        function getMyData() { // this is how to create a js function
+            console.log("My Name IS IJSE")
+            console.log("Iam 16 years old")
+        }
+
+        getMyData(); // you can call a function like this
+        getMyData();
+
+
+        // Function Hoisting
+        getMyAges(); // you can and declare it later
+
+        function getMyAges() {
+            console.log(10, 20, 30, 40, 60)
+        }*/
 
 
     /!*===================Arrays=====================*!/
@@ -362,119 +362,118 @@
     //-Literal Base Arrays
     //-Function Base Arrays
 
-/*    //-Literal Base Arrays
-    var myName=['kasun','galle','nipuna','piyumal'];
+    /*    //-Literal Base Arrays
+        var myName=['kasun','galle','nipuna','piyumal'];
 
-    //how to get values.?
-    myNames[0]; // we can get values by index number
-    console.log(myNames[1]);
-    console.log( myNames[2])
-    console.log(myNames[3]);*/
-
-
-/*
-    //function base Arrays
-    var ages= new Array(10,20,30,40,60); // this array has been created using Array Function
-    // //how to access values from this.?
-    console.log(ages[0]);
-    console.log(ages[1]);
-    console.log(ages[2]);
-*/
+        //how to get values.?
+        myNames[0]; // we can get values by index number
+        console.log(myNames[1]);
+        console.log( myNames[2])
+        console.log(myNames[3]);*/
 
 
+    /*
+        //function base Arrays
+        var ages= new Array(10,20,30,40,60); // this array has been created using Array Function
+        // //how to access values from this.?
+        console.log(ages[0]);
+        console.log(ages[1]);
+        console.log(ages[2]);
+    */
 
-    var customers=[];
+
+    var customers = [];
 
     // add customer name
 
 
     /!*===================Arrays method=====================*!/
 
-    //Array Related Methods, we can use these methods to manipulate array values
-    push(); // add values to the end of the array
-    pop(); // remove the last indexed value of the array
-    shift(); // remove the first indexed value of the array
-    unshift();// add values to the first index of the array
-    slice(); // can copy array values to another array by giving index ranges
-    splice(); // can remove array values from anywhere we want
-    reverse(); // can reverse the values of a array
-    sort(); //can sort the values of an array into a order
-    length // can get the value count of an array
-    indexOf(); // can get the index number of a value by giving the value
+    /*    //Array Related Methods, we can use these methods to manipulate array values
+        push(); // add values to the end of the array
+        pop(); // remove the last indexed value of the array
+        shift(); // remove the first indexed value of the array
+        unshift();// add values to the first index of the array
+        slice(); // can copy array values to another array by giving index ranges
+        splice(); // can remove array values from anywhere we want
+        reverse(); // can reverse the values of a array
+        sort(); //can sort the values of an array into a order
+        length // can get the value count of an array
+        indexOf(); // can get the index number of a value by giving the value*/
 
 
 
-/*    // Push (add values to the last index)
-    customers.push("A");
-    customers.push("B");
-    customers.push("C");
-    customers.push("D");
-    customers.push("E");
-    customers.push("F");
-    console.log(customers);*/
+    /*    // Push (add values to the last index)
+        customers.push("A");
+        customers.push("B");
+        customers.push("C");
+        customers.push("D");
+        customers.push("E");
+        customers.push("F");
+        console.log(customers);*/
 
 
-/*    //Pop (Remove the last indexed value of the arrays)
-    customers.pop(); //F
-    customers.pop(); //E
-    console.log(customers);*/
+    /*    //Pop (Remove the last indexed value of the arrays)
+        customers.pop(); //F
+        customers.pop(); //E
+        console.log(customers);*/
 
 
-/*    // Shift (Remove the first indexed value of an array)
-    customers.shift();//A
-    customers.shift();//B
-    console.log(customers);*/
+    /*    // Shift (Remove the first indexed value of an array)
+        customers.shift();//A
+        customers.shift();//B
+        console.log(customers);*/
 
 
-/*    //Unshift (Add values to the first index of the array)
-    customers.unshift("B");
-    customers.unshift("A");
-    customers.unshift("Z");
-    console.log(customers);*/
+    /*    //Unshift (Add values to the first index of the array)
+        customers.unshift("B");
+        customers.unshift("A");
+        customers.unshift("Z");
+        console.log(customers);*/
 
 
 
-/*    //Slice (Can copy a selected range of array to a new array)
-    var newArray=customers.slice(0,4); //start and end indexes
-    console.log(newArray);
-    customers.slice(); // customers copy*/
+    /*    //Slice (Can copy a selected range of array to a new array)
+        var newArray=customers.slice(0,4); //start and end indexes
+        console.log(newArray);
+        customers.slice(); // customers copy*/
 
 
-/*    // Splice (can remove any selected indexed value from an array)
-    //let's remove B
-    //index of B is 2
-    console.log("=================")
-    console.log(customers);
-    customers.splice(2,1);//B is removed // index number , delete count
-    console.log(customers);*/
+    /*    // Splice (can remove any selected indexed value from an array)
+        //let's remove B
+        //index of B is 2
+        console.log("=================")
+        console.log(customers);
+        customers.splice(2,1);//B is removed // index number , delete count
+        console.log(customers);*/
 
-/*    //reverse (Can reverse the values of an array)
-    var values = ['nipuna','chamara','sadun','pasidu'];
-    values.reverse();
-    console.log(values);*/
+    /*    //reverse (Can reverse the values of an array)
+        var values = ['nipuna','chamara','sadun','pasidu'];
+        values.reverse();
+        console.log(values);*/
 
-/*    //sort (can sort out values in an array)
-    var chs = ['A','Z','C','P','K'];
-    console.log(chs);
-    chs.sort();
-    console.log(chs); //['A', 'C', 'K', 'P', 'Z']*/
+    /*    //sort (can sort out values in an array)
+        var chs = ['A','Z','C','P','K'];
+        console.log(chs);
+        chs.sort();
+        console.log(chs); //['A', 'C', 'K', 'P', 'Z']*/
 
-/*    // length (can get the values count of an array)
-    chs.length();
-    console.log(chs)
-       /!*===or====*!/
-    console.log(chs.length);  //5*/
-
-
-/*    // indexOf
-     console.log(chs);
-    chs.indexOf('A');
-    console.log(chs); // return the index number of the A if A is available in the array otherwise return -0
-    chs.indexOf('K');  //2
-    chs.indexOf('M');  //-1*/
+    /*    // length (can get the values count of an array)
+        chs.length();
+        console.log(chs)
+           /!*===or====*!/
+        console.log(chs.length);  //5*/
 
 
-    /!*===================Loop=====================*!/
+    /*    // indexOf
+         console.log(chs);
+        chs.indexOf('A');
+        console.log(chs); // return the index number of the A if A is available in the array otherwise return -0
+        chs.indexOf('K');  //2
+        chs.indexOf('M');  //-1*/
+
+
+    /*===================Loop=====================*/
 
     // Loops and Iteration in JS
 
@@ -484,59 +483,78 @@
     //for in (index number)
     //for of (values)
 
-/*    //for loop
-    for(var i=0;i<10;i++){
-        console.log(i);
+    /*    //for loop
+        for(var i=0;i<10;i++){
+            console.log(i);
+        }*/
+
+    /*    // While loop
+        var i=0;
+        while(i<10){
+            i++;
+            console.log(i);
+        }*/
+
+
+    /*    //Do While
+        var i=15;
+        do{
+            console.log(i);
+            i++;
+        }while (i<20);*/
+
+
+    /*    // Let's get the values of an array using a for loop
+        var arrayOfAges=[10,20,55,65,34,90,100,35];
+
+        for(var i=0; i<arrayOfAges.length; i++) {
+            console.log(arrayOfAges[i]);
+        }*/
+
+
+    /*    //for of -> refer array values to the variable directly
+        for(var i of arrayOfAges){
+            console.log(i);
+        }*/
+
+
+    /*
+        // for in -> return index number of all the values
+        for(var i in arrayOfAges){
+            console.log(i,arrayOfAges[i]);
+        }
+    */
+
+
+    /*    /!*===================Alert=====================*!/
+
+        $("#d").click(function (){
+            console.log("hellow alert")
+            Swal.fire(
+                'The Internet?',
+                'That thing is still around?',
+                'question'
+            )
+        });*/
+
+
+    /*===================Alert=====================*/
+
+    // Control structures(if)
+    //if
+    //else if
+    //switch
+    //ternary operator
+
+/*    //if
+    var b = false;
+    if (b) {
+        console.log("B is true")
+    } else {
+        console.log("B is false")
     }*/
 
-/*    // While loop
-    var i=0;
-    while(i<10){
-        i++;
-        console.log(i);
-    }*/
 
-
-/*    //Do While
-    var i=15;
-    do{
-        console.log(i);
-        i++;
-    }while (i<20);*/
-
-
-/*    // Let's get the values of an array using a for loop
-    var arrayOfAges=[10,20,55,65,34,90,100,35];
-
-    for(var i=0; i<arrayOfAges.length; i++) {
-        console.log(arrayOfAges[i]);
-    }*/
-
-
-/*    //for of -> refer array values to the variable directly
-    for(var i of arrayOfAges){
-        console.log(i);
-    }*/
-
-
-/*
-    // for in -> return index number of all the values
-    for(var i in arrayOfAges){
-        console.log(i,arrayOfAges[i]);
-    }
-*/
-
-
-/*    /!*===================Alert=====================*!/
-
-    $("#d").click(function (){
-        console.log("hellow alert")
-        Swal.fire(
-            'The Internet?',
-            'That thing is still around?',
-            'question'
-        )
-    });*/
 
 
 </script>
