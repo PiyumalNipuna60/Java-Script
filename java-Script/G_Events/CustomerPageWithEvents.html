@@ -96,6 +96,8 @@
             </table>
         </div>
         <!--        <h1 id="dis">Code</h1>-->
+        <div id="display"
+             style="background-color: #0f6674;width: 95px;margin-top: 13px;margin-left: 14px;height: 41px;"></div>
     </section>
 </main>
 
@@ -103,36 +105,43 @@
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script>
+    /*
 
-    //Bind click event
-    $('#btnCustomer').on('click', function () {
-        alert("Hello there.");
-    });
-  //.....................
+        //Bind click event
+        $('#btnCustomer').on('click', function () {
+            alert("Hello there.");
+        });
+      //.....................
 
-    //Bind double click event
-    $("#tblCustomer>tr").on('dblclick', function () {
-        $(this).remove(); //select the row which runs the event at the moment and then delete it
-    });
-    //....................
+        //Bind double click event
+        $("#tblCustomer>tr").on('dblclick', function () {
+            $(this).remove(); //select the row which runs the event at the moment and then delete it
+        });
+        //....................
 
-    //Bind focus event
-    $("#txtCustomerID").on('focus', function () {
-        console.log("Customer ID Field Focused")
-    });
+        //Bind focus event
+        $("#txtCustomerID").on('focus', function () {
+            console.log("Customer ID Field Focused")
+        });
 
-    $("#txtCustomerName").on('focus', function () {
-        console.log("Customer Name Field Focused")
-    });
-    //....................
+        $("#txtCustomerName").on('focus', function () {
+            console.log("Customer Name Field Focused")
+        });
+        //....................
 
-    //Bind blur event
-    $("#txtCustomerID").on('blur',function () {
-        console.log("Customer ID Field Blurred")
-    });
+        //Bind blur event
+        $("#txtCustomerID").on('blur',function () {
+            console.log("Customer ID Field Blurred")
+        });
 
-    $("#txtCustomerName").on('blur',function () {
-        console.log("Customer Name Field Blurred")
+        $("#txtCustomerName").on('blur',function () {
+            console.log("Customer Name Field Blurred")
+        });
+    */
+
+    $("#txtCustomerID").on("keydown", function (event) {
+        console.log(event.key); // we can use event object properties to verify which keys we are pressing
+        $("#display").text(event.key);
     });
 
 
