@@ -58,7 +58,10 @@
     //     console.log("This is also demonstrate that document is ready")
     // });
 
-
+    // execute after all the content fully loaded
+    $(window).on('load', function () {
+        console.log("Window on load");
+    });
 
 
     // run after just creating the dom
