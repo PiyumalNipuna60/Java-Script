@@ -170,6 +170,29 @@
         }
     }
 
+    function defaultText(txtField,error) {
+        txtField.css("border", "1px solid #ced4da");
+        txtField.parent().children('span').text(error);
+    }
+
+    function focusText(txtField) {
+        txtField.focus();
+    }
+
+    function setButtonState(value){
+        if (value>0){
+            $("#btnCustomer").attr('disabled',true);
+        }else{
+            $("#btnCustomer").attr('disabled',false);
+        }
+    }
+
+    function clearAllTexts() {
+        $("#txtCustomerID").focus();
+        $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").val("");
+        checkValidity();
+    }
+
 </script>
 </body>
 </html>
