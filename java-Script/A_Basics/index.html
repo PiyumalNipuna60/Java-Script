@@ -585,6 +585,18 @@
     var x=(10>20)?100:200;
     console.log(x);*/
 
+
+    /*
+* How to write reguler expressions using js
+* */
+
+    var cusID = /^(C)[0-9]{3}$/; // this is a js literal (regex literal)
+    typeof cusID;// Object
+
+    // how to check a string with regex
+    var result = cusID.test("C001");// return boolean
+    console.log(result);
+
 </script>
 
 </body>
