@@ -134,6 +134,19 @@
         checkValidity();
     });
 
+    function checkValidity() {
+        let errorCount=0;
+        for (let validation of customerValidations) {
+            if (check(validation.reg,validation.field)) {
+                textSuccess(validation.field,"");
+            } else {
+                errorCount=errorCount+1;
+                setTextError(validation.field,validation.error);
+            }
+        }
+        setButtonState(errorCount);
+    }
+
 </script>
 </body>
 </html>
