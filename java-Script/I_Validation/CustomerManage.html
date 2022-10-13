@@ -118,7 +118,21 @@
     customerValidations.push({reg: cusSalaryRegEx, field: $('#txtCustomerSalary'),error:'Customer Salary Pattern is Wrong : 100 or 100.00'});
 
 
+    //disable tab key of all four text fields using grouping selector in CSS
+    $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").on('keydown', function (event) {
+        if (event.key == "Tab") {
+            event.preventDefault();
+        }
+    });
 
+
+    $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").on('keyup', function (event) {
+        checkValidity();
+    });
+
+    $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").on('blur', function (event) {
+        checkValidity();
+    });
 
 </script>
 </body>
