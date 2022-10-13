@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Customer Manage</title>
+    <title>Customer Manage With Validations</title>
     <meta content="width=device-width initial-scale=1" name="viewport">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/styles.css" rel="stylesheet">
@@ -19,12 +19,12 @@
 <header class="jumbotron bg-primary text-white p-3">
     <h1 class="position-absolute" id="nav"></h1>
     <ul class="list-group list-group-horizontal text-danger justify-content-end font-weight-bold">
-        <li class="list-group-item bg-white" id="lnkHome"><a href="#">Home</a></li>
+        <li class="list-group-item bg-white" id="lnkHome"><a href="../index.html">Home</a></li>
         <li class="list-group-item bg-danger text-white" id="lnkCustomer"><a class="text-white"
                                                                              href="CustomerPageWithEvents.html">Customer</a>
         </li>
-        <li class="list-group-item bg-white" id="lnkItem"><a href="#">Item</a></li>
-        <li class="list-group-item bg-white" id="lnkOrders"><a href="#">Orders</a></li>
+        <li class="list-group-item bg-white" id="lnkItem"><a href="item.html">Item</a></li>
+        <li class="list-group-item bg-white" id="lnkOrders"><a href="purchase-order.html">Orders</a></li>
     </ul>
 </header>
 
@@ -55,7 +55,7 @@
                 <span class="control-error" id="lblcussalary"></span>
             </div>
             <div class="btn-group">
-                <button class="btn btn-primary" id="btnCustomer">Save Customer</button>
+                <button class="btn btn-primary" id="btnCustomer" disabled>Save Customer</button>
                 <button class="btn btn-danger" id="btnCusDelete">Remove</button>
                 <button class="btn btn-warning" id="btnUpdate">Update</button>
                 <button class="btn btn-success" id="btnGetAll">Get All</button>
@@ -96,8 +96,6 @@
             </table>
         </div>
         <!--        <h1 id="dis">Code</h1>-->
-        <div id="display"
-             style="background-color: #0f6674;width: 95px;margin-top: 13px;margin-left: 14px;height: 41px;"></div>
     </section>
 </main>
 
@@ -105,116 +103,6 @@
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script>
-    /*
-
-        //Bind click event
-        $('#btnCustomer').on('click', function () {
-            alert("Hello there.");
-        });
-      //.....................
-
-        //Bind double click event
-        $("#tblCustomer>tr").on('dblclick', function () {
-            $(this).remove(); //select the row which runs the event at the moment and then delete it
-        });
-        //....................
-
-        //Bind focus event
-        $("#txtCustomerID").on('focus', function () {
-            console.log("Customer ID Field Focused")
-        });
-
-        $("#txtCustomerName").on('focus', function () {
-            console.log("Customer Name Field Focused")
-        });
-        //....................
-
-        //Bind blur event
-        $("#txtCustomerID").on('blur',function () {
-            console.log("Customer ID Field Blurred")
-        });
-
-        $("#txtCustomerName").on('blur',function () {
-            console.log("Customer Name Field Blurred")
-        });
-    */
-
-
-    /* =====================mouse events===========================*/
-
-    /*    $("#txtCustomerID").on("keydown", function (event) {
-            console.log(event.key); // we can use event object properties to verify which keys we are pressing
-            $("#display").text(event.key);
-
-        });*/
-
-    $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").on("keydown", function (event) {
-        if (event.key == "Tab") {
-            event.preventDefault();
-        }
-    });
-
-    $("#txtCustomerID").on("keydown", function (event) {
-        if (event.key == "Enter") {
-            $("#txtCustomerName").focus();
-        }
-    });
-
-    $("#txtCustomerName").on("keydown", function (event) {
-        if (event.key == "Enter") {
-            $("#txtCustomerAddress").focus();
-        }
-
-    });
-
-    $("#txtCustomerAddress").on("keydown", function (event) {
-        if (event.key == "Enter") {
-            $("#txtCustomerSalary").focus();
-        }
-
-    });
-
-    $("#txtCustomerSalary").on("keydown", function (event) {
-        if (event.key == "Enter") {
-            $("#btnCustomer").focus();
-        }
-    });
-
-
-    /* =====================mouse events===========================*/
-
-    // What we can do with mouse events
-    $("#heading").on("mouseup", function () {
-        console.log("Mouse Up")
-    });
-
-    $("#heading").on("mousedown", function () {
-        console.log("Mouse Down")
-    });
-
-    $("#heading").on("mousemove", function () {
-        console.log("Mouse Move")
-    });
-
-
-    $(window).on("mousemove", function (event) {
-        console.log(event.pageX, event.pageY)
-
-        // $("#heading").css('top',event.pageY)
-        // $("#heading").css('left',event.pageX)
-        // $("#heading").css('position','absolute')
-
-        /*   $("#heading").css({
-               'top':event.pageY-100,
-               'left':event.pageX,
-               'position':'absolute',
-               'font-size': '30px',
-               'width':"300px",
-               'z-index':'100'
-           });
-
-           $("#heading").text(`X : ${event.pageX} and Y : ${event.pageY}`);*/
-    });
 
 
 </script>
